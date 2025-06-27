@@ -1,6 +1,7 @@
 #!/bin/bash
 ./magiskboot unpack ../r.img
 ../magiskboot unpack ../r.img
+magiskboot unpack ../r.img
 cd ~runner/work/Patch-Recovery/Patch-Recovery/
 ../magiskboot unpack ../r.img
 rm -Rf d

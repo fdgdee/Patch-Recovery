@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~runner/work/Patch-Recovery/Patch-Recovery/
 rm -Rf d
 mkdir d
 cd d

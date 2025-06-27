@@ -39,6 +39,7 @@ jobs:
       run: |
         chmod a+x script1.sh
         chmod a+x magiskboot
+        chmod a+x avbtool
         ./script1.sh || true
 
     - name: Patch Process-2

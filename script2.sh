@@ -1,7 +1,7 @@
 #!/bin/bash
-
-mkdir unpack
-cd unpack
+rm -Rf d
+mkdir d
+cd d
 source ../magiskboot unpack ../r.img
 source ../magiskboot cpio ramdisk.cpio extract
 # Reverse fastbootd ENG mode check

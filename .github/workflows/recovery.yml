@@ -6,7 +6,7 @@ on:
       RECOVERY_URL:
         description: 'RECOVERY URL'
         required: true
-        default: 'https://transfer.sh/(RECOMMENDED)'
+        default: 'https://drive.google.com/file/d/1O9B7Vehumy17apDLGkiNA0qTMfToIJeN/view?usp=sharing'
 
 env:
   RECOVERY_URL: https://oshi.at/Rpjg
@@ -21,11 +21,11 @@ jobs:
 
     - name: Prepare the environment
       run: |
+        sudo apt update
         sudo apt install git wget lz4 tar openssl python3 -y
         sudo apt install -y python3-pip
         pip install gdown
         pip install --upgrade gdown
-
     - name: Fetch image from URL
       run: |
         ls
@@ -37,14 +37,14 @@ jobs:
 
     - name: Patch Process-1
       run: |
-        chmod a+x script1.sh
-        chmod a+x magiskboot
-        chmod a+x avbtool
+        chmod +x script1.sh
+        chmod +x magiskboot
+        chmod +x avbtool
         ./script1.sh || true
 
     - name: Patch Process-2
       run: |
-        chmod a+x script2.sh
+        chmod +x script2.sh
         ./script2.sh || true
         python3 avbtool extract_public_key --key phh.pem --output phh.pub.bin
         python3 avbtool add_hash_footer --partition_name recovery --partition_size $(wc -c recovery.img |cut -f 1 -d ' ') --image recovery-patched.img --key phh.pem --algorithm SHA256_RSA4096

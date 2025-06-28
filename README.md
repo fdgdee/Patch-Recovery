@@ -1,3 +1,6 @@
+# NOTICE
+Edited to work with google drive (as a failsafe to wget) , use some new lines from the source script and use latest magisk's magiskboot (v29.0)
+
 # Similar script
 You can also refer this [script](https://github.com/engineer4t/fastboot-patcher)
 

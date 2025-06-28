@@ -1,21 +1,8 @@
 #!/bin/bash
-source magiskboot
-../magiskboot unpack r.img
-../magiskboot unpack r.img
-../magiskboot unpack r.img
-./magiskboot unpack r.img
-/magiskboot unpack r.img
-magiskboot unpack r.img
-unpack r.img
-nm magiskboot
-ls
-cd ~runner/work/Patch-Recovery/Patch-Recovery/
+mkdir unpack
+cd unpack
 ../magiskboot unpack ../r.img
-rm -Rf d
-mkdir d
-cd d
-source ../magiskboot unpack ../r.img
-source ../magiskboot cpio ramdisk.cpio extract
+../magiskboot cpio ramdisk.cpio extract
 # Reverse fastbootd ENG mode check
 ~runner/work/Patch-Recovery/Patch-Recovery/magiskboot hexpatch system/bin/recovery e10313aaf40300aa6ecc009420010034 e10313aaf40300aa6ecc0094 # 20 01 00 35
 ~runner/work/Patch-Recovery/Patch-Recovery/magiskboot hexpatch system/bin/recovery eec3009420010034 eec3009420010035

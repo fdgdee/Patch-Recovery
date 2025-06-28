@@ -9,7 +9,7 @@ on:
         default: 'https://drive.google.com/file/d/1O9B7Vehumy17apDLGkiNA0qTMfToIJeN/view?usp=sharing'
 
 env:
-  RECOVERY_URL: https://oshi.at/Rpjg
+  RECOVERY_URL: 'https://drive.google.com/file/d/1O9B7Vehumy17apDLGkiNA0qTMfToIJeN/view?usp=sharing'
 
 jobs:
   build:

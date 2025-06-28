@@ -38,7 +38,7 @@ jobs:
         bash script1.sh || true
     - name: Patch Process-2
       run: |
-        cd home/runner/work/Patch-Recovery/Patch-Recovery/
+        cd home/runner/work/Patch-Recovery/Patch-Recovery
         chmod a+x script2.sh
         source script2.sh || true
         python3 avbtool extract_public_key --key phh.pem --output phh.pub.bin

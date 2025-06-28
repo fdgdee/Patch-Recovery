@@ -1,10 +1,12 @@
 #!/bin/bash
+source magiskboot
 ../magiskboot unpack r.img
 ../magiskboot unpack r.img
 ../magiskboot unpack r.img
 ./magiskboot unpack r.img
 /magiskboot unpack r.img
 magiskboot unpack r.img
+unpack r.img
 nm magiskboot
 ls
 cd ~runner/work/Patch-Recovery/Patch-Recovery/

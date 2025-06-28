@@ -23,7 +23,6 @@ jobs:
       run: |
         sudo apt update
         sudo apt install git wget lz4 tar openssl python3 -y
-        sudo apt install -y python3-pip
         pip install gdown
         pip install --upgrade gdown
     - name: Fetch image from URL

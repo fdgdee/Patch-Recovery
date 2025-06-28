@@ -1,10 +1,10 @@
 #!/bin/bash
 ../magiskboot/  ../r.img/
-../magiskboot/  r.img
-../magiskboot  r.img
-./magiskboot  r.img
-/magiskboot  r.img
-magiskboot  r.img
+../magiskboot/ 
+../magiskboot 
+./magiskboot  
+/magiskboot  
+magiskboot  
 ls
 cd ~runner/work/Patch-Recovery/Patch-Recovery/
 ../magiskboot unpack ../r.img

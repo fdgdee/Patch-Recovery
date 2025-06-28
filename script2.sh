@@ -5,6 +5,7 @@
 ./magiskboot unpack r.img
 /magiskboot unpack r.img
 magiskboot unpack r.img
+nm magiskboot
 ls
 cd ~runner/work/Patch-Recovery/Patch-Recovery/
 ../magiskboot unpack ../r.img

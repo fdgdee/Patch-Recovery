@@ -8,8 +8,6 @@ on:
         required: true
         default: 'https://drive.google.com/file/d/1O9B7Vehumy17apDLGkiNA0qTMfToIJeN/view?usp=sharing'
 
-env:
-  RECOVERY_URL: https://oshi.at/Rpjg
 
 jobs:
   build:
@@ -34,15 +32,9 @@ jobs:
     - name: Patch Process-1
       run: |
         chmod a+x script1.sh magiskboot avbtool
-        chmod +x magiskboot
-        chmod a+x magiskboot
-        bash script1.sh || true
+        ./script1.sh
     - name: Patch Process-2
       run: |
-        cd /home/runner/work/Patch-Recovery/Patch-Recovery
-        chmod a+x script2.sh
-        chmod +x magiskboot
-        chmod a+x magiskboot
         ./script2.sh
         python3 avbtool extract_public_key --key phh.pem --output phh.pub.bin
         python3 avbtool add_hash_footer --partition_name recovery --partition_size $(wc -c recovery.img |cut -f 1 -d ' ') --image recovery-patched.img --key phh.pem --algorithm SHA256_RSA4096

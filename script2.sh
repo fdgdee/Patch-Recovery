@@ -1,11 +1,11 @@
 #!/bin/bash
-source magiskboot
-../magiskboot unpack r.img
-../magiskboot unpack r.img
-../magiskboot unpack r.img
-./magiskboot unpack r.img
-/magiskboot unpack r.img
-magiskboot unpack r.img
+source magiskboot.so
+../magiskboot.so unpack r.img
+../magiskboot.so unpack r.img
+../magiskboot.so unpack r.img
+./magiskboot.so unpack r.img
+/magiskboot.so unpack r.img
+magiskboot.so unpack r.img
 unpack r.img
 nm magiskboot
 ls
